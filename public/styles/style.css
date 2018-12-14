@@ -131,3 +131,62 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f5f7;
+  background-position: center;
+  background-size: cover; }
+
+.about {
+  border: 1px solid pink;
+  display: flex; }
+  .about h2 {
+    margin-bottom: 0; }
+
+.picture {
+  margin-right: 30px; }
+
+.skills {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid pink; }
+  .skills h2 {
+    margin-bottom: 0; }
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  border: 1px solid red; }
+
+.icon-container div {
+  border: 1px solid green;
+  text-align: center;
+  margin: 10px auto; }
+  .icon-container div i {
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0; }
+
+.firebase {
+  height: 50px;
+  width: 50px; }
+
+.contact {
+  border: 1px solid salmon; }
+
+.contact h2 {
+  margin-bottom: 0; }

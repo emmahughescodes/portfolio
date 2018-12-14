@@ -1,0 +1,43 @@
+.skills {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid pink;
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    // flex: 1;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    // justify-content: space-around;
+    margin: 0 auto;
+    border: 1px solid red;
+} 
+
+.icon-container div {
+    border: 1px solid green;
+    text-align: center;
+    margin: 10px auto;
+    
+    i {
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+.firebase {
+    height: 50px;
+    width: 50px;
+}
