@@ -3,11 +3,11 @@ header {
   height: 100vh;
   width: 100%;
   //   background-color: #f4f5f7;
-  background-image: url("/assets/emma_plants2.png");
+  background-image: url("/assets/plant-header2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: opacity(80%);
+  filter: opacity(70%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -16,7 +16,7 @@ header {
 .header-content {
 //   border: 1px solid green;
     // position: fixed;
-  padding-bottom: 30px;
+  padding-bottom: 10%;
 
   h1, p {
     margin: 0;
@@ -26,16 +26,23 @@ header {
 }
 h1 {
     text-transform: uppercase;
-    font-size: 10rem;
+    font-size: 9rem;
     // color: #1a3e1a;
     color: #6f9f5a;
-    width: 50%;
+    // width: 55%;
     text-shadow: -5px 2px #332f2f;
+    margin-bottom: 10px;
+    letter-spacing: 1.25rem;
+    // word-break: break-all;
+    .break {
+        display: block;
+    }
 }
 p {
     font-size: 4rem;
     color: #dcb252;
     font-weight: bold;
+    letter-spacing: 0.25rem;
   }
 
 }

@@ -147,30 +147,34 @@ body {
 header {
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/emma_plants2.png");
+  background-image: url("/assets/plant-header2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: opacity(80%);
+  filter: opacity(70%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
 
 .header-content {
-  padding-bottom: 30px; }
+  padding-bottom: 10%; }
   .header-content h1, .header-content p {
     margin: 0;
     font-family: 'Pontano Sans', sans-serif; }
   .header-content h1 {
     text-transform: uppercase;
-    font-size: 10rem;
+    font-size: 9rem;
     color: #6f9f5a;
-    width: 50%;
-    text-shadow: -5px 2px #332f2f; }
+    text-shadow: -5px 2px #332f2f;
+    margin-bottom: 10px;
+    letter-spacing: 1.25rem; }
+    .header-content h1 .break {
+      display: block; }
   .header-content p {
     font-size: 4rem;
     color: #dcb252;
-    font-weight: bold; }
+    font-weight: bold;
+    letter-spacing: 0.25rem; }
 
 @media (max-width: 600px) {
   body {
@@ -189,16 +193,14 @@ header {
   .about h2 {
     margin-bottom: 0; }
 
-.picture {
-  margin-right: 30px; }
-
 .about-title {
   text-align: center; }
   .about-title h2 {
     margin-bottom: 0;
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #4b4b4c; }
 
 .about-content {
   display: flex; }
@@ -206,6 +208,16 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     line-height: 3rem;
+    width: 100%;
+    color: #4b4b4c; }
+
+.picture {
+  margin-right: 30px; }
+
+.profile {
+  border: 1px solid black;
+  width: 20%; }
+  .profile img {
     width: 100%; }
 
 .skills {
@@ -213,7 +225,11 @@ header {
   margin: 0 auto;
   border: 1px solid pink; }
   .skills h2 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #4b4b4c; }
 
 .icon-container {
   display: flex;
@@ -237,11 +253,23 @@ header {
 .firebase {
   width: 35px; }
 
+.project-title {
+  text-align: center; }
+  .project-title h2 {
+    margin-bottom: 0;
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #4b4b4c; }
+
 .contact {
   border: 1px solid salmon; }
 
 .contact h2 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
 
 .contact-title {
   border: 1px solid red;
@@ -261,7 +289,8 @@ header {
 footer {
   height: 50vh;
   width: 100%;
-  background-image: url("/assets/emma_plants3.png");
+  background-image: url("/assets/plant-header.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  filter: opacity(70%); }
