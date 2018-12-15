@@ -1,0 +1,36 @@
+.contact {
+    border: 1px solid salmon;
+}
+
+.contact h2 {
+    margin-bottom: 0;
+}
+
+.contact-title {
+    border: 1px solid red;
+    width: 100%;
+    text-align: center;
+}
+
+.social-media {
+    border: 1px solid red;
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media ul li {
+    list-style: none;
+}
+
+footer {
+  height: 50vh;
+  width: 100%;
+  background-image: url("/assets/emma_plants3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+//   filter: opacity(90%);
+}

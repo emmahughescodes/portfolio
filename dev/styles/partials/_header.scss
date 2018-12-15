@@ -1,14 +1,43 @@
 header {
+//   border: 1px solid red;
   height: 100vh;
   width: 100%;
-  background-color: #f4f5f7;
-//   background-image: url("/assets/plant-header.jpg");
+  //   background-color: #f4f5f7;
+  background-image: url("/assets/emma_plants2.png");
   background-position: center;
   background-size: cover;
-    //   filter: opacity(50%);
-    //   z-index: 10;
+  background-repeat: no-repeat;
+  filter: opacity(80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header-content {
+//   border: 1px solid green;
     // position: fixed;
-    // z-index: 1;
+  padding-bottom: 30px;
+
+  h1, p {
+    margin: 0;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Pontano Sans', sans-serif;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 10rem;
+    // color: #1a3e1a;
+    color: #6f9f5a;
+    width: 50%;
+    text-shadow: -5px 2px #332f2f;
+}
+p {
+    font-size: 4rem;
+    color: #dcb252;
+    font-weight: bold;
+  }
+
 }
 
 // #tri {
@@ -33,3 +62,21 @@ header {
 //   border-bottom: 100vw solid red;
 //   border-left: 100vh solid transparent;
 // }
+@media (max-width: 600px) {
+    body {
+        background-color: pink;
+    }
+
+    .header-content {
+        h1 {
+            font-size: 6rem;
+            text-align: center;
+            line-height: 5rem;
+            margin-bottom: 15px;
+        }
+        p {
+            text-align: center;
+            line-height: 3rem;
+        }
+    }
+}

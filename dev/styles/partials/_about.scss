@@ -1,6 +1,6 @@
 .about {
     border: 1px solid pink;
-    display: flex;
+   
     h2 {
         margin-bottom: 0;
     }
@@ -10,3 +10,24 @@
     margin-right: 30px;
 }
 
+.about-title {
+    text-align: center;
+    h2 {
+        margin-bottom: 0;
+        // border: 1px solid pink;
+        font-size: 4rem;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 400;
+
+    }
+}
+
+.about-content {
+    display: flex;
+    p {
+        font-family: 'Roboto', sans-serif; 
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 100%;
+    }
+}
