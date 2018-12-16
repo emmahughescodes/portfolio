@@ -3,7 +3,7 @@ header {
   height: 100vh;
   width: 100%;
   //   background-color: #f4f5f7;
-  background-image: url("/assets/plant-header2.jpg");
+  background-image: url("/assets/emma_plants.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,6 +11,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
 }
 
 .header-content {
@@ -33,7 +34,6 @@ h1 {
     text-shadow: -5px 2px #332f2f;
     margin-bottom: 10px;
     letter-spacing: 1.25rem;
-    // word-break: break-all;
     .break {
         display: block;
     }
@@ -43,32 +43,27 @@ p {
     color: #dcb252;
     font-weight: bold;
     letter-spacing: 0.25rem;
+    text-transform: uppercase;
   }
 
 }
 
-// #tri {
-//   width: 0;
-//   height: 0;
-//   border-top-width: 500px;
-//   border-top-style: solid;
-//   border-top-color: transparent;
-//   border-right-width: 100vw;
-//   border-right-style: solid;
-//   border-right-color:rgb(236, 237, 240);
-//   position: absolute;
-//     //top: 0;
-//     //left: 0;
-//     //position: fixed;
-//     z-index: 10;
-// }
+nav {
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+}
 
-// #tri {
-//   width: 0;
-//   height: 0;
-//   border-bottom: 100vw solid red;
-//   border-left: 100vh solid transparent;
-// }
+
+
+
 @media (max-width: 600px) {
     body {
         background-color: pink;

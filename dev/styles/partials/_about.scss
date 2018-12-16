@@ -10,7 +10,6 @@
 .about-title {
     text-align: center;
     h2 {
-        margin-bottom: 0;
         // border: 1px solid pink;
         font-size: 5rem;
         font-family: 'Roboto', sans-serif; 
@@ -20,7 +19,9 @@
 }
 
 .about-content {
+    margin-top: 10px;
     display: flex;
+    align-items: center;
     p {
         font-family: 'Roboto', sans-serif; 
         font-size: 2rem;
@@ -31,14 +32,24 @@
 }
 
 .picture {
-    margin-right: 30px;
+    // border: 1px solid black;
+    // margin-right: 5%;
+    margin-left: 12%;
+    // margin-top: 50px;
+    // position: relative;
 }
 
 .profile {
-    border: 1px solid black;
-    width: 20%;
+    // border: 1px solid green;
+    // width: 80%;
+    // position: absolute;
+    // top: 30px;
+    // left: 30px;
+    
     img {
-        width: 100%;
+        width: 90%;
+        // border-radius: 50%;
+        box-shadow: -10px 10px#dcb252;
     }
 }
 
