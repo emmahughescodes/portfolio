@@ -132,6 +132,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+nav, ul, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  color: green; }
+
+a {
+  text-decoration: none; }
+
 html {
   scroll-behavior: smooth;
   background-color: #fefefe;
@@ -145,49 +153,62 @@ body {
   margin: 0 auto; }
 
 header {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
   background-image: url("/assets/emma_plants.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
   filter: opacity(70%);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  position: relative; }
+  justify-content: center;
+  position: relative;
+  border: 1px solid red; }
 
-.header-content {
-  padding-bottom: 10%; }
-  .header-content h1, .header-content p {
-    margin: 0;
-    font-family: 'Pontano Sans', sans-serif; }
-  .header-content h1 {
-    text-transform: uppercase;
-    font-size: 9rem;
-    color: #6f9f5a;
-    text-shadow: -5px 2px #332f2f;
-    margin-bottom: 10px;
-    letter-spacing: 1.25rem; }
-    .header-content h1 .break {
-      display: block; }
-  .header-content p {
-    font-size: 4rem;
-    color: #dcb252;
-    font-weight: bold;
-    letter-spacing: 0.25rem;
-    text-transform: uppercase; }
+.header-content h1, .header-content p {
+  margin: 0;
+  font-family: 'Pontano Sans', sans-serif; }
+
+.header-content h1 {
+  text-transform: uppercase;
+  font-size: 9rem;
+  color: #6f9f5a;
+  text-shadow: -5px 2px #332f2f;
+  margin-bottom: 10px;
+  letter-spacing: 1.25rem; }
+  .header-content h1 .break {
+    display: block; }
+
+.header-content p {
+  font-size: 4rem;
+  color: #dcb252;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase; }
 
 nav {
-  border: 1px solid black;
+  background-color: #9de68666;
+  width: 100%;
+  height: 8vh;
   position: absolute;
   top: 0;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem; }
   nav ul {
     display: flex;
     flex-direction: row;
     list-style: none; }
+  nav li {
+    margin-right: 15px; }
+  nav a {
+    color: #332f2f; }
+  nav a:hover {
+    color: #e6c885; }
 
 @media (max-width: 600px) {
   body {
@@ -202,7 +223,8 @@ nav {
     line-height: 3rem; } }
 
 .about {
-  border: 1px solid pink; }
+  border: 1px solid pink;
+  padding: 40px 0; }
   .about h2 {
     margin-bottom: 0; }
 
@@ -226,11 +248,22 @@ nav {
     color: #4b4b4c; }
 
 .picture {
-  margin-left: 12%; }
+  width: 40%;
+  position: relative; }
 
-.profile img {
-  width: 90%;
-  box-shadow: -10px 10px #dcb252; }
+.frame {
+  margin-left: 10%; }
+
+.profile {
+  width: 80%;
+  position: absolute;
+  bottom: 50px;
+  left: 50px; }
+  .profile img {
+    width: 85%; }
+
+.about-text {
+  width: 60%; }
 
 .skills {
   text-align: center;
@@ -246,9 +279,8 @@ nav {
 .icon-container {
   display: flex;
   flex-wrap: wrap;
-  flex-flow: row wrap;
+  flex-shrink: 1;
   justify-content: center;
-  align-items: flex-start;
   margin: 0 auto;
   border: 1px solid red; }
 

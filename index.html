@@ -21,17 +21,16 @@
   </head>
   <body>
     <header>
-		<nav >
-			<ul class="wrapper">
-				<li>About</li>
-				<li>Projects</li>
-				<li>Skills</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
-	
-	
-		<div class="header-content wrapper">
+      <nav>
+        <ul class="wrapper">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-content wrapper">
         <p>Hello, I'm</p>
         <h1>Emma <span class="break">Seto-Hughes</span></h1>
         <p>Front-end Web Developer</p>
@@ -40,18 +39,17 @@
     <!-- Header section ends here -->
     <!-- Main section starts here -->
     <main>
-      <section class="about wrapper">
+      <section class="about wrapper" id="about">
         <div class="about-title">
           <h2>About Me</h2>
           <img src="/assets/gold-line.png" alt="gold line detail" />
         </div>
         <div class="about-content">
           <div class="picture">
-            <!--
-              <div class="circle">
-              	<img src="/assets/Ellipse.png" alt="circle">
-              </div>
-            -->
+            <div class="frame">
+              <img src="/assets/gold-frame.png" alt="circle" />
+            </div>
+
             <div class="profile">
               <img
                 src="/assets/Emma-SetoHughes-Portfolio-Profile-Pic.jpg"
@@ -61,28 +59,29 @@
           </div>
           <div class="about-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              nihil obcaecati totam exercitationem. Molestias distinctio a ea
-              laboriosam, eveniet ipsum. Commodi molestiae nesciunt odit quo
-              magni tempora ut esse autem quaerat consectetur rem dolorum,
-              dignissimos cum perspiciatis aperiam! Sed ipsum facilis possimus
-              velit minus est libero, ipsa voluptatem, eligendi suscipit odit
-              sint ut laborum
+              Hello! I'm Emma, a Front-end developer based in Toronto. As a
+              graduate of HackerYou's immersive coding school I enjoy making
+              beautiful, creative, and accessible software.
             </p>
 
             <p>
-              doloribus quisquam eveniet ullam modi. Alias aliquam a, sapiente
-              quam eveniet, illum dolorem repellendus expedita dolorum debitis
-              id adipisci est doloremque facilis, dignissimos rem unde soluta
-              eligendi temporibus consequatur. Dolore fugit rerum, quae amet
-              facere totam nihil sint? Nemo dignissimos reprehenderit suscipit,
-              ratione similique officia amet!
+              Before diving into web development I graduated from the University
+              of Waterloo with a degree in Industrial Engineering and spent a
+              year as a Product Manager. This role actively encouraged me to
+              think like a developer as I was a Designer, QA and laison between
+              developers and the client.
+            </p>
+
+            <p>
+              With the technical skills I have gained at HackerYou and my
+              experience leading a team to deliver software products I'm excited
+              to join a team as a developer!
             </p>
           </div>
         </div>
       </section>
 
-      <section class="projects wrapper">
+      <section class="projects wrapper" id="projects">
         <div class="project-title">
           <h2>Projects</h2>
           <img src="/assets/gold-line.png" alt="gold line detail" />
@@ -95,7 +94,7 @@
         </div>
       </section>
       <!-- Skills section starts here -->
-      <section class="skills wrapper">
+      <section class="skills wrapper" id="skills">
         <div class="skills-title">
           <h2>Skills</h2>
           <img src="/assets/gold-line.png" alt="gold line detail" />
@@ -153,7 +152,7 @@
     <!-- Footer section starts here -->
     <footer>
       <!-- Contact section starts here -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact wrapper">
           <!-- <div class="wrapper"> -->
           <div class="contact-title">
