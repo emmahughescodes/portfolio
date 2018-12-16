@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+
   background-color: #fefefe;
   font-size: 62.5%;
 }
@@ -14,3 +14,28 @@ body {
     // max-width: 1640px;
     margin: 0 auto;
 }
+
+// @keyframes snow {
+//     0% {
+//         top: 0;
+//     }
+//     80% {
+//         transform: translate3d(300,0,0)
+//         rotate(0deg);
+//     }
+//     90% {
+//         transform:  translate3d(0,0,0)
+//             rotate(-20deg);
+//     }
+//     100% {
+//         top: 100%;
+//     }
+// }
+
+// .snowflake {
+//     position: absolute;
+//     font-size: 40px;
+//     color: black;
+    
+//     animation: snow 5s 0s infinite;
+// }
