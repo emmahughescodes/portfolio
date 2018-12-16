@@ -20,13 +20,14 @@
     // align-items: flex-start;
     // justify-content: space-around;
     margin: 0 auto;
+    margin-top: 5%;
     border: 1px solid red;
 } 
 
 .icon-container div {
     border: 1px solid green;
     text-align: center;
-    margin: 20px 30px;
+    margin: 0px 30px 20px 30px;
     padding: 5px;
     
     i {
@@ -40,10 +41,8 @@
         font-family: 'Roboto', sans-serif; 
         font-weight: 400;
         color: #4b4b4c;
-        
     }
 }
-
 
 .firebase {
     width: 6.5rem;

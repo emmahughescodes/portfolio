@@ -1,5 +1,8 @@
-AOS.init();
+AOS.init({
+    disable: window.innerWidth < 768
+});
 
+console.log("Hi, I'm Emma! Connect with me on social media or email :) ");
 
 $('a[href^="#"]').on('click', function (event) {
     var target = $(this.getAttribute('href'));

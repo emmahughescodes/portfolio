@@ -148,9 +148,23 @@ body {
 
 .wrapper {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid purple; }
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%; } }
 
 header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border: 1px solid red;
+  z-index: 1; }
+
+header:before {
   min-height: 100vh;
   background-image: url("/assets/emma_plants.png");
   background-position: center;
@@ -158,23 +172,28 @@ header {
   background-repeat: no-repeat;
   object-fit: cover;
   filter: opacity(70%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  border: 1px solid red; }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
-.header-content h1, .header-content p {
+.header-content h1,
+.header-content p {
   margin: 0;
-  font-family: 'Pontano Sans', sans-serif; }
+  font-family: "Pontano Sans", sans-serif; }
 
 .header-content h1 {
+  filter: opacity(70%);
   text-transform: uppercase;
   font-size: 9rem;
   color: #6f9f5a;
   text-shadow: -5px 2px #332f2f;
   margin-bottom: 10px;
-  letter-spacing: 1.25rem; }
+  letter-spacing: 1.25rem;
+  line-height: 8rem;
+  z-index: 2; }
   .header-content h1 .break {
     display: block; }
 
@@ -182,8 +201,11 @@ header {
   font-size: 4rem;
   color: #dcb252;
   font-weight: bold;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase; }
+  letter-spacing: 0.1rem; }
+
+.snowflake2 {
+  width: 60px;
+  transform: rotate(-40deg); }
 
 nav {
   background-color: #9de68666;
@@ -194,7 +216,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: "Pontano Sans", sans-serif;
   font-size: 2.5rem;
   letter-spacing: 0.25rem; }
   nav ul {
@@ -210,15 +232,26 @@ nav {
 
 @media (max-width: 600px) {
   body {
-    background-color: pink; }
-  .header-content h1 {
-    font-size: 6rem;
+    background-color: white; }
+  .snowflake1 {
     text-align: center;
-    line-height: 5rem;
-    margin-bottom: 15px; }
-  .header-content p {
-    text-align: center;
-    line-height: 3rem; } }
+    margin: 0 auto;
+    display: none; }
+  .snowflake2 {
+    text-align: center; }
+  .header-content {
+    text-align: center; }
+    .header-content h1 {
+      font-size: 6rem;
+      text-align: center;
+      line-height: 6rem;
+      margin-bottom: 15px; }
+    .header-content p {
+      text-align: center;
+      line-height: 4rem;
+      margin-bottom: 15px; }
+    .header-content p:first-child {
+      display: none; } }
 
 .about {
   border: 1px solid pink;
@@ -240,27 +273,43 @@ nav {
   align-items: center; }
   .about-content p {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     width: 100%;
     color: #4b4b4c; }
 
-.picture {
-  width: 40%; }
-
-.frame {
-  margin-left: 10%; }
-
 .profile {
-  width: 80%;
-  margin-left: 15%;
-  margin-right: 5%; }
+  width: 30%;
+  margin-left: 10%; }
   .profile img {
     width: 85%;
-    box-shadow: -10px 10px #dcb252; }
+    box-shadow: -8px 8px #dcb252; }
 
 .about-text {
-  width: 60%; }
+  width: 60%;
+  padding-right: 10%; }
+
+@media (max-width: 930px) {
+  .about {
+    margin: 0 auto;
+    text-align: center; }
+  .about-content {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 1px solid blue; }
+  .profile {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    .profile img {
+      margin: 0;
+      padding: 0;
+      width: 45%; }
+  .about-text {
+    width: 100%;
+    padding: 0; } }
 
 .skills {
   text-align: center;
@@ -278,12 +327,13 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 5%;
   border: 1px solid red; }
 
 .icon-container div {
   border: 1px solid green;
   text-align: center;
-  margin: 20px 30px;
+  margin: 0px 30px 20px 30px;
   padding: 5px; }
   .icon-container div i {
     font-size: 9rem;
@@ -308,20 +358,42 @@ nav {
     font-weight: 400;
     color: #4b4b4c; }
 
+.project-content {
+  margin-top: 5%; }
+
 .project {
-  height: 70vh;
+  border: 1px solid pink;
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
-  margin-bottom: 20%; }
+  margin-top: 5%;
+  margin-bottom: 10%; }
   .project .project-preview {
-    border: 1px solid purple;
     width: 50%; }
     .project .project-preview img {
       width: 100%; }
   .project .project-text {
-    border: 1px solid teal;
     width: 50%; }
+    .project .project-text p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      width: 100%;
+      color: #4b4b4c; }
+
+@media (max-width: 745px) {
+  .project-content {
+    text-align: center; }
+  .project {
+    display: block; }
+  .project-preview {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid lime; }
+  .project-text {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid lime; } }
 
 .contact {
   border: 1px solid salmon; }

@@ -13,7 +13,10 @@ body {
     width: 90%;
     // max-width: 1640px;
     margin: 0 auto;
+    border: 1px solid purple;
 }
+
+
 
 // @keyframes snow {
 //     0% {
@@ -39,3 +42,10 @@ body {
     
 //     animation: snow 5s 0s infinite;
 // }
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+}
