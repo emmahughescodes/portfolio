@@ -14,7 +14,7 @@
 .icon-container {
     display: flex;
     flex-wrap: wrap;
-    flex-shrink: 1;
+    // flex-shrink: 1;
     // flex-flow: row wrap;
     justify-content: center;
     // align-items: flex-start;
@@ -26,16 +26,25 @@
 .icon-container div {
     border: 1px solid green;
     text-align: center;
-    margin: 10px 20px;
+    margin: 20px 30px;
+    padding: 5px;
+    
     i {
-        font-size: 50px;
+        font-size: 9rem;
         text-align: center;
         margin: 0 auto;
         padding: 0;
+    }
+    p {
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 400;
+        color: #4b4b4c;
+        
     }
 }
 
 
 .firebase {
-    width: 35px;
+    width: 6.5rem;
 }
