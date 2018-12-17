@@ -374,11 +374,15 @@ nav {
       width: 100%; }
   .project .project-text {
     width: 50%; }
+    .project .project-text .project-name {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      color: #4b4b4c; }
     .project .project-text p {
       font-family: 'Roboto', sans-serif;
       font-size: 1.5rem;
       line-height: 3rem;
-      width: 100%;
       color: #4b4b4c; }
 
 @media (max-width: 745px) {
@@ -394,6 +398,15 @@ nav {
     width: 100%;
     margin: 0 auto;
     border: 1px solid lime; } }
+
+.live, .github {
+  border: 1px solid #4b4b4c;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #4b4b4c;
+  margin-right: 15px; }
 
 .contact {
   border: 1px solid salmon; }
