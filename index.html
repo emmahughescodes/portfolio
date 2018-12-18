@@ -338,17 +338,32 @@
     <!-- Footer section starts here -->
     <footer>
       <!-- Contact section starts here -->
-      <section class="contact-main" id="contact">
+      <section class="contact-main wrapper" id="contact">
+        
         <div class="contact wrapper">
           <!-- <div class="wrapper"> -->
           <div class="contact-title">
             <h2>Contact</h2>
             <img src="/assets/gold-line.png" alt="gold line detail" />
           </div>
+          <div class="contact-info">
+            <p>Say Hello!</p>
+            <h3><a href="mailto:emma.setohughes@gmail.com">emma.setohughes@gmail.com</a></h3>
+            
+          </div>
+
+          <form action="mailto:emma.setohughes@gmail.com" method="post" enctype="text/plain">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Name" aria-label="name">
+            <label for="email"></label>
+            <input type="text" name="mail" id="email" placeholder="email" aria-label="email">
+            <label for="comment"></label>
+            <input type="text" name="comment" size="50" id="comment" placeholder="Message" aria-label="message">
+            <input type="submit" value="Send">
+          </form>
+
+
           <div class="social-media">
-            <a href="mailto:emma.setohughes@gmail.com"
-              >emma.setohughes@gmail.com</a
-            >
             <ul>
               <li>
                 <a target="_blank" href="https://twitter.com/emmahughescodes"
@@ -378,11 +393,11 @@
         </div>
       </section>
       <!-- Contact section ends here -->
-      <!--
-        <section class="copyright">
+      
+        <!-- <section class="copyright">
             <div class="wrapper"><p>Developed by Emma Hughes |  2018</p></div>
-        </section>
-      -->
+        </section> -->
+     
     </footer>
     <!-- Footer section ends here -->
     <script src="public/scripts/app.js"></script>

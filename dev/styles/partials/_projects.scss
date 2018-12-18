@@ -15,7 +15,7 @@
 }
 
 .project {
-    border: 1px solid pink;
+    // border: 1px solid pink;
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
@@ -86,25 +86,26 @@
     .project-preview {
         width: 100%;
         margin: 0 auto;
-        border: 1px solid lime;
+        // border: 1px solid lime;
     }
     .project-text {
         width: 100%;
         margin: 0 auto;
-        border: 1px solid lime;
+        // border: 1px solid lime;
     }
 }
 
 // buttons to view live site and source code
 .live, .github {
-    border: 1px solid #dcb252;
+    border: 1px solid #ecc468;
     padding: 10px;
     font-family: 'Roboto', sans-serif; 
     font-size: 1.5rem;
     line-height: 3rem;
     color: #4b4b4c;
     margin-right: 15px;
-    background-color: #dcb252;
+    // background-color: #dcb252;
+    background-color: #ecc468;
 }
 
 .project-even .project-text {
@@ -124,9 +125,10 @@
 
 
 .live:hover, .github:hover {
-    background-color: #ecc468;
+    // background-color: #ecc468;
+    background-color: #dcb252;
     transition: all 0.3s ease 0s;
-    border: 1px solid #ecc468;
+    border: 1px solid #dcb252;
 }
 
 

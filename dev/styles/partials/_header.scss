@@ -32,12 +32,13 @@ header {
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
-  border: 1px solid red;
+  // border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 header .center {
@@ -116,10 +117,10 @@ header .center {
   top: 0;
   bottom: 0;
   z-index: 15;
-  width: 25%;
-  max-width: 500px;
-  background-color: #ddb2497a;
-  
+  // width: 25%;
+  max-width: 600px;
+  // background-color: #ddb2497a;
+  background: linear-gradient(#dcb252, #ffffff);
 }
 .hamburger i {
   // position: absolute;
@@ -127,6 +128,7 @@ header .center {
   top: 15px;
   right: 25px;
   font-size: 4rem;
+  color: #4b4b4c;
 }
 
 .closed {
@@ -142,16 +144,18 @@ header .center {
   top: 10px;
   right: 25px;
   font-size: 4rem;
-  border: 1px solid black;
+  // border: 1px solid black;
+  // color: #4b4b4c;
+  color: white;
 }
 
 .mainNav ul {
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .NavLinks li {
   text-decoration: none;
-  margin: 20px;
+  margin: 30px;
 }
 
 .NavLinks a {
