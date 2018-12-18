@@ -115,8 +115,9 @@ header .center {
   position: fixed;
   top: 0;
   bottom: 0;
-  // z-index: 10;
-  width: 350px;
+  z-index: 15;
+  width: 25%;
+  max-width: 500px;
   background-color: #ddb2497a;
   
 }
@@ -129,7 +130,7 @@ header .center {
 }
 
 .closed {
-  right: -480px;
+  right: -500px;
 }
 
 .opened {
@@ -159,8 +160,15 @@ header .center {
   font-size: 3.5rem;
   // color: #4b4b4c;
   color: white;
-  
+ 
 }
+
+ .NavLinks a:hover {
+    // background-color: #dcb252;
+    color: #4b4b4c;
+    transition: all 0.3s ease 0s;
+    // border: 1px solid #dcb252;
+  }
 
 //
 

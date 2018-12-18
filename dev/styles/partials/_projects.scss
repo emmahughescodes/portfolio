@@ -30,7 +30,13 @@
     }
   }
   .project-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    //   padding-left: 4%;
     // border: 1px solid teal;
+        width: 50%; 
     .project-name {
         // font-family: 'Roboto', sans-serif; 
         font-family: 'Nunito Sans', sans-serif;
@@ -40,7 +46,6 @@
         // width: 100%;
         color: #4b4b4c;
     }
-    width: 50%;
     p {
         // font-family: 'Roboto', sans-serif; 
         font-family: 'Nunito Sans', sans-serif;
@@ -49,11 +54,23 @@
         // width: 100%;
         color: #4b4b4c;
     }
+    .description {
+        margin-bottom: 0;
+    }
   }
 }
 
 .project:nth-child(even) {
     flex-direction: row-reverse;
+    
+}
+
+.project-even .project-text {
+    align-items: flex-end;
+    p {
+        text-align: right;
+    }
+    
 }
 
 @media (max-width: 745px) {
@@ -80,18 +97,36 @@
 
 // buttons to view live site and source code
 .live, .github {
-    border: 1px solid #4b4b4c;
+    border: 1px solid #dcb252;
     padding: 10px;
     font-family: 'Roboto', sans-serif; 
     font-size: 1.5rem;
     line-height: 3rem;
     color: #4b4b4c;
     margin-right: 15px;
+    background-color: #dcb252;
 }
 
+.project-even .project-text {
+    align-items: flex-end;
+    p {
+        text-align: right;
+    }
+    
+    
+}
+
+
+.project-even .code-buttons .live, .project-even .code-buttons .github {
+        margin-right: 0;
+        margin-left: 15px;
+    }  
+
+
 .live:hover, .github:hover {
-    background-color: #dcb252;
-    border: 1px solid #dcb252;
+    background-color: #ecc468;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #ecc468;
 }
 
 
