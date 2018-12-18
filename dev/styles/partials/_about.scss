@@ -43,6 +43,9 @@
 .about-text {
     width: 60%;
     padding-right: 10%;
+    p {
+        line-height: 2.1rem;
+    }
 }
 
 @media (max-width: 930px) {
@@ -70,5 +73,6 @@
     .about-text {
         width: 100%;
         padding: 0;
+
     }
 }
