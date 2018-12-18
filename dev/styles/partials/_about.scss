@@ -6,13 +6,12 @@
     }
 }
 
-
 .about-title {
     text-align: center;
     h2 {
-        // border: 1px solid pink;
         font-size: 5rem;
-        font-family: 'Roboto', sans-serif; 
+        // font-family: 'Roboto', sans-serif; 
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
         color: #4b4b4c;
     }
@@ -23,7 +22,8 @@
     display: flex;
     align-items: center;
     p {
-        font-family: 'Roboto', sans-serif; 
+        // font-family: 'Roboto', sans-serif; 
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 1.5rem;
         line-height: 3rem;
         width: 100%;
@@ -31,17 +31,11 @@
     }
 }
 
-
-
 .profile {
-    // border: 1px solid green;
     width: 30%;
     margin-left: 10%;
-    // margin-right: 5%;
     img {
         width: 85%;
-        // border: 1px solid red;
-        // border-radius: 50%;
         box-shadow: -8px 8px#dcb252;
     }
 }

@@ -136,6 +136,9 @@ nav, ul, h1, h2, h3 {
   padding: 0;
   margin: 0; }
 
+nav, ul {
+  list-style: none; }
+
 a {
   text-decoration: none; }
 
@@ -148,6 +151,7 @@ body {
 
 .wrapper {
   width: 90%;
+  max-width: 1280px;
   margin: 0 auto;
   border: 1px solid purple; }
 
@@ -157,78 +161,82 @@ body {
 
 header {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
   border: 1px solid red;
-  z-index: 1; }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
-header:before {
-  min-height: 100vh;
-  background-image: url("/assets/emma_plants.png");
+header .center {
+  text-align: center;
+  background-image: url("/assets/cacti.jpg");
+  width: 80vw;
+  height: 85vh;
+  margin: 0 auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  object-fit: cover;
-  filter: opacity(70%);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-.header-content h1,
-.header-content p {
-  margin: 0;
-  font-family: "Pontano Sans", sans-serif; }
-
-.header-content h1 {
-  filter: opacity(70%);
-  text-transform: uppercase;
-  font-size: 9rem;
-  color: #6f9f5a;
-  text-shadow: -5px 2px #332f2f;
-  margin-bottom: 10px;
-  letter-spacing: 1.25rem;
-  line-height: 8rem;
-  z-index: 2; }
-  .header-content h1 .break {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  header .center img {
+    width: 100%;
     display: block; }
-
-.header-content p {
-  font-size: 4rem;
-  color: #dcb252;
-  font-weight: bold;
-  letter-spacing: 0.1rem; }
+  header .center .my-name {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 7.5rem;
+    text-align: center;
+    margin-top: 25%; }
+  header .center .center-text p {
+    font-family: 'Domine', serif;
+    font-size: 3rem;
+    color: white;
+    margin: 0; }
 
 .snowflake2 {
   width: 60px;
   transform: rotate(-40deg); }
 
-nav {
-  background-color: #9de68666;
-  width: 100%;
-  height: 8vh;
-  position: absolute;
+.mainNav {
+  position: fixed;
   top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Pontano Sans", sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: 0.25rem; }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none; }
-  nav li {
-    margin-right: 15px; }
-  nav a {
-    color: #332f2f; }
-  nav a:hover {
-    color: #e6c885; }
+  bottom: 0;
+  width: 350px;
+  background-color: #ddb2497a; }
+
+.hamburger i {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  font-size: 4rem; }
+
+.closed {
+  right: -480px; }
+
+.opened {
+  right: 0; }
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 4rem;
+  border: 1px solid black; }
+
+.mainNav ul {
+  border: 1px solid black; }
+
+.NavLinks li {
+  text-decoration: none;
+  margin: 20px; }
+
+.NavLinks a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5rem;
+  color: white; }
 
 @media (max-width: 600px) {
   body {
@@ -263,7 +271,7 @@ nav {
   text-align: center; }
   .about-title h2 {
     font-size: 5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     color: #4b4b4c; }
 
@@ -272,7 +280,7 @@ nav {
   display: flex;
   align-items: center; }
   .about-content p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5rem;
     line-height: 3rem;
     width: 100%;
@@ -318,7 +326,7 @@ nav {
   .skills h2 {
     margin-bottom: 0;
     font-size: 5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     color: #4b4b4c; }
 
@@ -327,11 +335,9 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 5%;
-  border: 1px solid red; }
+  margin-top: 5%; }
 
 .icon-container div {
-  border: 1px solid green;
   text-align: center;
   margin: 0px 30px 20px 30px;
   padding: 5px; }
@@ -339,10 +345,11 @@ nav {
     font-size: 9rem;
     text-align: center;
     margin: 0 auto;
-    padding: 0; }
+    padding: 0;
+    color: #dcb252; }
   .icon-container div p {
     font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     color: #4b4b4c; }
 
@@ -354,7 +361,7 @@ nav {
   .project-title h2 {
     margin-bottom: 0;
     font-size: 5rem;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     color: #4b4b4c; }
 
@@ -375,15 +382,19 @@ nav {
   .project .project-text {
     width: 50%; }
     .project .project-text .project-name {
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.5rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 3rem;
       line-height: 3rem;
+      font-weight: 400;
       color: #4b4b4c; }
     .project .project-text p {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
       font-size: 1.5rem;
       line-height: 3rem;
       color: #4b4b4c; }
+
+.project:nth-child(even) {
+  flex-direction: row-reverse; }
 
 @media (max-width: 745px) {
   .project-content {
@@ -408,22 +419,27 @@ nav {
   color: #4b4b4c;
   margin-right: 15px; }
 
-.contact {
-  border: 1px solid salmon; }
+.live:hover, .github:hover {
+  background-color: #dcb252;
+  border: 1px solid #dcb252; }
 
 .contact h2 {
   margin-bottom: 0;
   font-size: 5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #4b4b4c;
   font-weight: 400; }
 
 .contact-title {
-  border: 1px solid red;
   width: 100%;
   text-align: center; }
 
 .social-media {
   border: 1px solid red; }
+  .social-media a {
+    font-size: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400; }
 
 .social-media ul {
   display: flex;
@@ -431,18 +447,25 @@ nav {
 
 .social-media ul li {
   list-style: none; }
+  .social-media ul li i {
+    font-size: 5rem; }
 
 footer {
-  height: 100vh;
+  min-height: 70vh;
+  position: relative;
+  position: relative;
+  z-index: 10; }
+
+footer:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70vh;
   width: 100%;
-  background-image: url("/assets/emma_plants_1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: opacity(70%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  background: #e3e4e6;
+  clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0); }
 
 .copyright {
   display: flex;

@@ -5,7 +5,8 @@
     h2 {
         margin-bottom: 0;
         font-size: 5rem;
-        font-family: 'Roboto', sans-serif; 
+        // font-family: 'Roboto', sans-serif; 
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
         color: #4b4b4c;
     }
@@ -21,11 +22,11 @@
     // justify-content: space-around;
     margin: 0 auto;
     margin-top: 5%;
-    border: 1px solid red;
+    // border: 1px solid red;
 } 
 
 .icon-container div {
-    border: 1px solid green;
+    // border: 1px solid green;
     text-align: center;
     margin: 0px 30px 20px 30px;
     padding: 5px;
@@ -35,11 +36,13 @@
         text-align: center;
         margin: 0 auto;
         padding: 0;
+        color: #dcb252;
     }
     
     p {
         font-size: 2rem;
-        font-family: 'Roboto', sans-serif; 
+        // font-family: 'Roboto', sans-serif; 
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
         color: #4b4b4c;
     }
