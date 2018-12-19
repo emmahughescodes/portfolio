@@ -66,6 +66,10 @@ header .center {
     text-align: center;
     margin-top: 25%;
     text-shadow: 0.25px 0.25px #a3a3a3;
+    animation-duration: 8s;
+  }
+  .my-role {
+    animation-duration: 8s;
   }
   .center-text {
     p {
@@ -176,6 +180,10 @@ header .center {
     transition: all 0.3s ease 0s;
     // border: 1px solid #dcb252;
   }
+
+.social-links {
+  border: 1px solid blue;
+}
 
 //
 

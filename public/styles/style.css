@@ -188,7 +188,10 @@ header .center {
     font-size: 7.5rem;
     text-align: center;
     margin-top: 25%;
-    text-shadow: 0.25px 0.25px #a3a3a3; }
+    text-shadow: 0.25px 0.25px #a3a3a3;
+    animation-duration: 8s; }
+  header .center .my-role {
+    animation-duration: 8s; }
   header .center .center-text p {
     font-family: 'Domine', serif;
     font-size: 3rem;
@@ -242,6 +245,9 @@ header .center {
 .NavLinks a:hover {
   color: #4b4b4c;
   transition: all 0.3s ease 0s; }
+
+.social-links {
+  border: 1px solid blue; }
 
 @media (max-width: 600px) {
   body {
@@ -340,8 +346,7 @@ header .center {
   justify-content: center;
   margin: 0 auto;
   margin-top: 5%;
-  padding: 6%;
-  padding-top: 0; }
+  padding: 0 6%; }
 
 .icon-container div {
   text-align: center;
@@ -479,7 +484,16 @@ header .center {
     .code-buttons .live {
       margin: 0 15px 0 0; } }
 
-.contact h2 {
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact-title {
+  margin-bottom: 5px; }
+
+.contact-title h2 {
   margin-bottom: 0;
   font-size: 5rem;
   font-family: 'Nunito Sans', sans-serif;
@@ -496,8 +510,17 @@ header .center {
   font-weight: 700;
   color: white;
   font-size: 2.5rem; }
+  .contact-info p {
+    text-shadow: 0.25px 0.25px #a3a3a3; }
   .contact-info a {
     color: #a9a9ae; }
+  .contact-info a:hover {
+    color: #85858c;
+    transition: all 0.3s ease 0s; }
+
+.contact-info h3 {
+  color: #a9a9ae;
+  margin-bottom: 25px; }
 
 .social-media {
   text-align: center; }
@@ -513,6 +536,10 @@ header .center {
     font-size: 3rem;
     color: #a9a9ae;
     margin: 10px; }
+  .social-media ul li i:hover {
+    color: #85858c;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out 0s; }
 
 .contact-main {
   min-height: 70vh;
@@ -528,26 +555,36 @@ header .center {
   height: 70vh;
   width: 100%;
   background: #e3e4e6;
-  clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0);
-  -webkit-clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0); }
+  clip-path: polygon(100% 23%, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 23%, 100% 100%, 0 100%, 0 0); }
 
 form {
-  padding: 3%;
+  padding: 1.5%;
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 25px;
   background-color: #ecc468;
   width: 45%; }
   form input {
     display: block;
     margin-bottom: 3%;
-    width: 100%; }
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif; }
   form input:last-child {
     margin-bottom: 0; }
+  form input[type="submit"] {
+    color: #4b4b4c;
+    font-family: 'Nunito Sans', sans-serif; }
 
 @media (max-width: 745px) {
   .contact-info h3 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  form {
+    width: 100%;
+    margin: 0; } }
 
 footer {
   background: #e3e4e6; }
@@ -555,10 +592,10 @@ footer {
 .copyright {
   width: 100%; }
   .copyright div {
-    color: #332f2f;
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5rem; }
     .copyright div p {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      color: #85858c; }

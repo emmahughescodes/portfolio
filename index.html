@@ -10,16 +10,19 @@
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Pontano+Sans|Roboto:400,700"
-      rel="stylesheet"
-    /> -->
+    <!--
+      <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Pontano+Sans|Roboto:400,700"
+        rel="stylesheet"
+      />
+    -->
     <link
       href="https://fonts.googleapis.com/css?family=Domine:400,700"
       rel="stylesheet"
@@ -29,6 +32,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="public/styles/style.css" />
   </head>
   <body>
@@ -42,7 +46,30 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+            <div class="social-links">
+              <li>
+                <a target="_blank" href="https://twitter.com/emmahughescodes">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/in/emmashughes/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://medium.com/@emmahughescodes">
+                  <i class="fab fa-medium-m"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/emmahughescodes">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </div>
           </ul>
+
         </div>
       </nav>
 
@@ -54,8 +81,8 @@
 
       <div class="center">
         <div class="center-text">
-          <h2 class="my-name">Emma Seto-Hughes</h2>
-          <p>Front-end Web Developer</p>
+          <h2 class="my-name animated fadeIn">Emma Seto-Hughes</h2>
+          <p class="my-role animated fadeIn">Front-end Web Developer</p>
         </div>
       </div>
       <!-- <div class="header-content wrapper"> -->
@@ -264,12 +291,12 @@
               </p>
               <p><span class="tools">Built with</span> HTML, CSS</p>
               <div class="code-buttons">
-                <a class="live" href="">Live Site</a>
-                <a class="github" href="">View on Github</a>
+                <a class="live" target="_blank" href="https://emmahughescodes.github.io/emma_setohughes_project1/">Live Site</a>
+                <a class="github" target="_blank" href="https://github.com/emmahughescodes/emma_setohughes_project1">View on Github</a>
               </div>
             </div>
           </div>
-      </div>
+        </div>
       </section>
       <!-- Skills section starts here -->
       <section class="skills wrapper" id="skills">
@@ -329,70 +356,70 @@
       <!-- Skills section ends here -->
     </main>
     <!-- Main section ends here -->
-   
-      <!-- Contact section starts here -->
-      <section class="contact-main" id="contact">
-        
-        <div class="contact wrapper">
-          <!-- <div class="wrapper"> -->
-          <div class="contact-title">
-            <h2>Contact</h2>
-            <img src="/assets/gold-line.png" alt="gold line detail" />
-          </div>
-          <div class="contact-info">
-            <p>Say Hello!</p>
-            <h3><a href="mailto:emma.setohughes@gmail.com">emma.setohughes@gmail.com</a></h3>
-            
-          </div>
 
+    <!-- Contact section starts here -->
+    <section class="contact-main" id="contact">
+      <div class="contact-title">
+        <h2>Contact</h2>
+        <img src="/assets/gold-line.png" alt="gold line detail" />
+      </div>
+      <div class="contact wrapper">
+        <!-- <div class="wrapper"> -->
+
+        <div class="contact-info">
+          <p>Say hello! Send me an email</p>
+          <h3>
+            <a href="mailto:emma.setohughes@gmail.com"
+              >emma.setohughes@gmail.com</a
+            >
+          </h3>
+        </div>
+
+        <!-- <div class="form-container"> -->
           <form action="mailto:emma.setohughes@gmail.com" method="post" enctype="text/plain">
             <label for="name"></label>
             <input type="text" name="name" id="name" placeholder="Name" aria-label="name">
             <label for="email"></label>
-            <input type="text" name="mail" id="email" placeholder="email" aria-label="email">
+            <input type="text" name="mail" id="email" placeholder="Email" aria-label="email">
             <label for="comment"></label>
             <input type="text" name="comment" size="50" id="comment" placeholder="Message" aria-label="message">
             <input type="submit" value="Send">
           </form>
+        <!-- </div> -->
 
-
-
-          <div class="social-media">
-            <ul>
-              <li>
-                <a target="_blank" href="https://twitter.com/emmahughescodes"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/emmashughes/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://medium.com/@emmahughescodes"
-                  ><i class="fab fa-medium-m"></i
-                ></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/emmahughescodes"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!-- </div> -->
+        <div class="social-media">
+          <ul>
+            <li>
+              <a target="_blank" href="https://twitter.com/emmahughescodes"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/emmashughes/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://medium.com/@emmahughescodes"
+                ><i class="fab fa-medium-m"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/emmahughescodes"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+        <!-- </div> -->
+      </div>
+    </section>
+    <!-- Contact section ends here -->
+    <!-- Footer section starts here -->
+    <footer>
+      <section class="copyright">
+        <div class="wrapper"><p>© 2018 Emma Seto-Hughes</p></div>
       </section>
-      <!-- Contact section ends here -->
-      <!-- Footer section starts here -->
-      <footer>
-        <section class="copyright">
-            <div class="wrapper"><p>© 2018 Emma Seto-Hughes</p></div>
-        </section>
-     
     </footer>
     <!-- Footer section ends here -->
     <script src="public/scripts/app.js"></script>
