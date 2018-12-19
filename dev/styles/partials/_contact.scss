@@ -1,0 +1,88 @@
+
+
+.contact h2 {
+  margin-bottom: 0;
+  font-size: 5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #4b4b4c;
+  font-weight: 400;
+}
+
+.contact-title {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5rem;
+    a {
+      color: #a9a9ae;
+    }
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media ul li {
+  list-style: none;
+  i {
+    font-size: 3rem;
+    color: #a9a9ae;
+    margin: 10px;
+  }
+}
+
+.contact-main {
+  min-height: 70vh;
+  position: relative;
+  z-index: 10;
+}
+
+.contact-main:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70vh;
+  width: 100%;
+  background: #e3e4e6;
+  clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0);
+}
+
+
+form {
+  padding: 3%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #ecc468;
+  width: 45%;
+  input {
+    display: block;
+    margin-bottom: 3%;
+    width: 100%;
+  }
+  input:last-child {
+    margin-bottom:0;
+  }
+}
+
+
+@media (max-width: 745px) {
+  .contact-info h3 {
+    font-size: 2rem;
+  }
+}

@@ -12,7 +12,7 @@
     height: 100%;
     width: 100%;
     background: #e3e4e6;
-    clip-path: polygon(0 17%, 100% 0%, 100% 100%, 0 82%);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 91%);
 }
 
 .project-title {
@@ -55,7 +55,7 @@
     .project-name {
         // font-family: 'Roboto', sans-serif; 
         font-family: 'Nunito Sans', sans-serif;
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 3rem;
         font-weight: 400;
         color: #4b4b4c;
@@ -92,30 +92,6 @@
     
 }
 
-@media (max-width: 745px) {
-    .project-content {
-        text-align: center;
-        // width: 80%;
-        // margin: 0 auto;
-    }
-    .project {
-        display: block;
-
-    
-    .project-preview {
-        width: 100%;
-        margin: 0 auto;
-        // border: 1px solid lime;
-    }
-    .project-text {
-        width: 100%;
-        margin: 0 auto;
-        // border: 1px solid lime;
-    }
-}
-    
-}
-
 // buttons to view live site and source code
 .live, .github {
     border: 1px solid #ecc468;
@@ -135,16 +111,12 @@
     p {
         text-align: right;
     }
-    
-    
 }
-
 
 .project-even .code-buttons .live, .project-even .code-buttons .github {
         margin-right: 0;
         margin-left: 15px;
     }  
-
 
 .live:hover, .github:hover {
     // background-color: #ecc468;
@@ -154,5 +126,44 @@
 }
 
 
+@media (max-width: 745px) {
+    .project-content {
+        text-align: center;
+        // width: 80%;
+        // margin: 0 auto;
+    }
+    .project {
+        display: block;
+
+    
+    .project-preview {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        // border: 1px solid lime;
+    }
+    .project-text {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        p {
+            text-align: center;
+        }
+        // border: 1px solid lime;
+    }
+}
+    .code-buttons {
+        text-align: center;
+        margin: 0 auto;
+        .github {
+            margin: 0 0 0 15px;
+        }
+        .live {
+            margin: 0 15px 0 0;
+        }
+    }
+}
 
 

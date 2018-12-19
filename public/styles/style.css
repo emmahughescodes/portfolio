@@ -322,7 +322,7 @@ header .center {
       width: 45%; }
   .about-text {
     width: 100%;
-    padding: 0; } }
+    padding: 10px; } }
 
 .skills {
   text-align: center;
@@ -375,7 +375,7 @@ header .center {
   height: 100%;
   width: 100%;
   background: #e3e4e6;
-  clip-path: polygon(0 17%, 100% 0%, 100% 100%, 0 82%); }
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 91%); }
 
 .project-title {
   text-align: center; }
@@ -407,7 +407,7 @@ header .center {
     width: 50%; }
     .project .project-text .project-name {
       font-family: 'Nunito Sans', sans-serif;
-      font-size: 3rem;
+      font-size: 3.5rem;
       line-height: 3rem;
       font-weight: 400;
       color: #4b4b4c; }
@@ -428,18 +428,6 @@ header .center {
   align-items: flex-end; }
   .project-even .project-text p {
     text-align: right; }
-
-@media (max-width: 745px) {
-  .project-content {
-    text-align: center; }
-  .project {
-    display: block; }
-    .project .project-preview {
-      width: 100%;
-      margin: 0 auto; }
-    .project .project-text {
-      width: 100%;
-      margin: 0 auto; } }
 
 .live, .github {
   border: 1px solid #ecc468;
@@ -465,6 +453,31 @@ header .center {
   background-color: #dcb252;
   transition: all 0.3s ease 0s;
   border: 1px solid #dcb252; }
+
+@media (max-width: 745px) {
+  .project-content {
+    text-align: center; }
+  .project {
+    display: block; }
+    .project .project-preview {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px; }
+    .project .project-text {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      padding: 10px; }
+      .project .project-text p {
+        text-align: center; }
+  .code-buttons {
+    text-align: center;
+    margin: 0 auto; }
+    .code-buttons .github {
+      margin: 0 0 0 15px; }
+    .code-buttons .live {
+      margin: 0 15px 0 0; } }
 
 .contact h2 {
   margin-bottom: 0;
@@ -501,12 +514,12 @@ header .center {
     color: #a9a9ae;
     margin: 10px; }
 
-footer {
+.contact-main {
   min-height: 70vh;
   position: relative;
   z-index: 10; }
 
-footer:after {
+.contact-main:after {
   z-index: -1;
   content: '';
   position: absolute;
@@ -515,7 +528,8 @@ footer:after {
   height: 70vh;
   width: 100%;
   background: #e3e4e6;
-  clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0); }
+  clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 0); }
 
 form {
   padding: 3%;
@@ -531,22 +545,20 @@ form {
   form input:last-child {
     margin-bottom: 0; }
 
-.copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 8vh; }
-  .copyright div {
-    color: #332f2f;
-    text-align: center;
-    font-family: "Pontano Sans", sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 0.25rem; }
-    .copyright div p {
-      padding: 0;
-      margin: 0; }
-
 @media (max-width: 745px) {
   .contact-info h3 {
     font-size: 2rem; } }
+
+footer {
+  background: #e3e4e6; }
+
+.copyright {
+  width: 100%; }
+  .copyright div {
+    color: #332f2f;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5rem; }
+    .copyright div p {
+      padding: 0;
+      margin: 0; }
