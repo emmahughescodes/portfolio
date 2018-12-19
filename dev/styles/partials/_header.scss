@@ -177,12 +177,20 @@ header .center {
  .NavLinks a:hover {
     // background-color: #dcb252;
     color: #4b4b4c;
-    transition: all 0.3s ease 0s;
+    transition: all 0.8s ease 0s;
     // border: 1px solid #dcb252;
   }
 
 .social-links {
-  border: 1px solid blue;
+  // border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  li {
+    margin: 0;
+  }
 }
 
 //
