@@ -1,44 +1,10 @@
-// header {
-//   min-height: 100vh;
-//   // background-image: url("/assets/emma_plants.png");
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   position: relative;
-//   border: 1px solid red;
-//   // z-index: 1;
-// }
-
-// header:before {
-//   min-height: 100vh;
-//   background-image: url("/assets/emma_plants.png");
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   filter: opacity(70%);
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-// }
-
 header {
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
   min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 header .center {
@@ -58,7 +24,6 @@ header .center {
     display: block;
   }
   .my-name {
-    // font-family: 'Nunito Sans', sans-serif;
     font-family: 'Domine', serif;
     font-weight: 700;
     color: white;
@@ -80,43 +45,12 @@ header .center {
       text-shadow: 0.25px 0.25px #a3a3a3;
     }
   }
-
 }
 
 .snowflake2 {
   width: 60px;
   transform: rotate(-40deg);
 }
-
-// nav {
-//   background-color: #9de68666;
-//   width: 100%;
-//   height: 8vh;
-//   // border: 1px solid black;
-//   position: absolute;
-//   top: 0;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   font-family: "Pontano Sans", sans-serif;
-//   font-size: 2.5rem;
-//   letter-spacing: 0.25rem;
-
-//   ul {
-//     display: flex;
-//     flex-direction: row;
-//     list-style: none;
-//   }
-//   li {
-//     margin-right: 15px;
-//   }
-//   a {
-//     color: #332f2f;
-//   }
-//   a:hover {
-//     color: #e6c885;
-//   }
-// }
 
 .mainNav {
   position: fixed;
@@ -125,11 +59,9 @@ header .center {
   z-index: 40;
   width: 250px;
   max-width: 600px;
-  // background-color: #ddb2497a;
   background: linear-gradient(#dcb252, #ffffff);
 }
 .hamburger i {
-  // position: absolute;
   position: fixed;
   top: 15px;
   right: 25px;
@@ -151,13 +83,7 @@ header .center {
   top: 10px;
   right: 25px;
   font-size: 4rem;
-  // border: 1px solid black;
-  // color: #4b4b4c;
   color: white;
-}
-
-.mainNav ul {
-  // border: 1px solid black;
 }
 
 .NavLinks li {
@@ -166,23 +92,17 @@ header .center {
 }
 
 .NavLinks a {
-  // font-family: "Roboto", sans-serif;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 3.5rem;
-  // color: #4b4b4c;
   color: white;
- 
 }
 
  .NavLinks a:hover {
-    // background-color: #dcb252;
     color: #4b4b4c;
     transition: all 0.8s ease 0s;
-    // border: 1px solid #dcb252;
   }
 
 .social-links {
-  // border: 1px solid blue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -192,8 +112,6 @@ header .center {
     margin: 0;
   }
 }
-
-//
 
 @media (max-width: 600px) {
   body {

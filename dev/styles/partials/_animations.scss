@@ -1,0 +1,12 @@
+path {
+  stroke-dasharray: 4133.546875;
+  stroke-dashoffset: 4133.546875;
+  animation: dash 30s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

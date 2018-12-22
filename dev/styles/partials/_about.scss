@@ -1,5 +1,4 @@
 .about {
-    // border: 1px solid pink;
     padding: 40px 0;
     h2 {
         margin-bottom: 0;
@@ -10,7 +9,6 @@
     text-align: center;
     h2 {
         font-size: 5rem;
-        // font-family: 'Roboto', sans-serif; 
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
         color: #4b4b4c;
@@ -22,7 +20,6 @@
     display: flex;
     align-items: center;
     p {
-        // font-family: 'Roboto', sans-serif; 
         font-family: 'Nunito Sans', sans-serif;
         font-size: 1.5rem;
         line-height: 3rem;
@@ -58,7 +55,6 @@
         text-align: center;
         margin: 0 auto;
         margin-top: 5%;
-        // border: 1px solid blue;
     }
     .profile {
         margin: 0;
@@ -73,6 +69,5 @@
     .about-text {
         width: 100%;
         padding: 10px;
-
     }
 }

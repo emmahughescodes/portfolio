@@ -102,7 +102,6 @@
     color: #4b4b4c;
     margin-right: 15px;
     margin-top: 5px;
-    // background-color: #dcb252;
     background-color: #ecc468;
 }
 
@@ -119,7 +118,6 @@
     }  
 
 .live:hover, .github:hover {
-    // background-color: #ecc468;
     background-color: #dcb252;
     transition: all 0.3s ease 0s;
     border: 1px solid #dcb252;
@@ -129,18 +127,13 @@
 @media (max-width: 745px) {
     .project-content {
         text-align: center;
-        // width: 80%;
-        // margin: 0 auto;
     }
     .project {
-        display: block;
-
-    
+        display: block;    
     .project-preview {
         width: 100%;
         margin: 0 auto;
         padding: 10px;
-        // border: 1px solid lime;
     }
     .project-text {
         width: 100%;
@@ -151,7 +144,6 @@
         p {
             text-align: center;
         }
-        // border: 1px solid lime;
     }
 }
     .code-buttons {
