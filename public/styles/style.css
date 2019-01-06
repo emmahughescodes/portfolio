@@ -192,18 +192,21 @@ header .center {
     width: 100%;
     display: block; }
   header .center .my-name {
-    font-family: 'Domine', serif;
+    font-family: "Domine", serif;
     font-weight: 700;
     color: white;
     font-size: 7.5rem;
     text-align: center;
     margin-top: 25%;
     text-shadow: 0.25px 0.25px #a3a3a3; }
+  header .center .mobile-name {
+    display: none; }
   header .center .my-role {
     animation-duration: 5s; }
   header .center .center-text p {
-    font-family: 'Domine', serif;
+    font-family: "Domine", serif;
     font-size: 3rem;
+    font-weight: bold;
     color: white;
     margin: 0;
     -webkit-text-stroke-width: 0.25px;
@@ -218,8 +221,7 @@ header .center {
   top: 0;
   bottom: 0;
   z-index: 40;
-  width: 250px;
-  max-width: 600px;
+  width: 300px;
   background: linear-gradient(#dcb252, #ffffff); }
 
 .hamburger i {
@@ -248,7 +250,7 @@ header .center {
   margin: 30px; }
 
 .NavLinks a {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 3.5rem;
   color: white; }
 
@@ -264,6 +266,19 @@ header .center {
   margin-right: 30px; }
   .social-links li {
     margin: 0; }
+
+@media (max-width: 700px) {
+  .my-name {
+    display: none; }
+  header .center .mobile-name {
+    margin-top: 25%;
+    display: block;
+    font-family: "Domine", serif;
+    font-weight: 700;
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+    text-shadow: 0.25px 0.25px #a3a3a3; } }
 
 @media (max-width: 600px) {
   body {

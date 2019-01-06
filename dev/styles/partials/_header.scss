@@ -24,7 +24,7 @@ header .center {
     display: block;
   }
   .my-name {
-    font-family: 'Domine', serif;
+    font-family: "Domine", serif;
     font-weight: 700;
     color: white;
     font-size: 7.5rem;
@@ -32,13 +32,20 @@ header .center {
     margin-top: 25%;
     text-shadow: 0.25px 0.25px #a3a3a3;
   }
+
+  .mobile-name {
+    // border: 1px solid purple;
+    display: none;
+  }
+
   .my-role {
     animation-duration: 5s;
   }
   .center-text {
     p {
-      font-family: 'Domine', serif;
+      font-family: "Domine", serif;
       font-size: 3rem;
+      font-weight: bold;
       color: white;
       margin: 0;
       -webkit-text-stroke-width: 0.25px;
@@ -57,8 +64,8 @@ header .center {
   top: 0;
   bottom: 0;
   z-index: 40;
-  width: 250px;
-  max-width: 600px;
+  width: 300px;
+  // max-width: 600px;
   background: linear-gradient(#dcb252, #ffffff);
 }
 .hamburger i {
@@ -92,15 +99,15 @@ header .center {
 }
 
 .NavLinks a {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 3.5rem;
   color: white;
 }
 
- .NavLinks a:hover {
-    color: #4b4b4c;
-    transition: all 0.8s ease 0s;
-  }
+.NavLinks a:hover {
+  color: #4b4b4c;
+  transition: all 0.8s ease 0s;
+}
 
 .social-links {
   display: flex;
@@ -110,6 +117,23 @@ header .center {
   margin-right: 30px;
   li {
     margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .my-name {
+    display: none;
+  }
+  header .center .mobile-name {
+    margin-top: 25%;
+    display: block;
+    // border: 1px solid red;
+    font-family: "Domine", serif;
+    font-weight: 700;
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+    text-shadow: 0.25px 0.25px #a3a3a3;
   }
 }
 
