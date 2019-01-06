@@ -31,10 +31,9 @@ header .center {
     text-align: center;
     margin-top: 25%;
     text-shadow: 0.25px 0.25px #a3a3a3;
-    animation-duration: 8s;
   }
   .my-role {
-    animation-duration: 8s;
+    animation-duration: 5s;
   }
   .center-text {
     p {
@@ -42,7 +41,8 @@ header .center {
       font-size: 3rem;
       color: white;
       margin: 0;
-      text-shadow: 0.25px 0.25px #a3a3a3;
+      -webkit-text-stroke-width: 0.25px;
+      -webkit-text-stroke-color: #a3a3a3;
     }
   }
 }
