@@ -132,3 +132,9 @@ form {
     margin: 0;
   }
 }
+
+@media (max-width: 356px) {
+  .contact-info h3 {
+    font-size: 1.75rem;
+  }
+}
